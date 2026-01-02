@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    --font-sm: 0.8rem;
+    --font-md: 1rem;
+    --font-lg: 1.5rem;
+    --font-xl: 2rem;
+    --font-xxl: 3rem;
+}
+
+body {
+background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.header-text {
+  font-family: "Rubik Mono One";
+    font-size: var(--font-xxl);
+}
+
+.header-description {
+    font-size: var(--font-lg);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #5A8DEE;
+    align-items: center;
+    height: 3em;
+    padding: 0rem 1rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--font-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: inline-block;
+    position: relative;
+}
+
+nav li {
+    border-radius: 1em;
+    margin: 0 var(--spacing-md);
+}
+nav li:hover {
+}
+.nav-active {
+    background-color: #A1C4FD;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.hero-col {
+    
+}
+
+.me-image {
+clip-path: circle(50% at 50% 50%);
+}
+
+.container {
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-list {
+    width: 60%;
+}
+
+.project {
+    display: flex;
+    gap: var(--spacing-xl);
+}
+
+.project-buttons {
+    margin-top: var(--spacing-md);
+    display: flex;
+}
+
+.project button {
+    margin: 0 var(--spacing-md);
+    background-color: transparent;
+    border: none;
+}
+
+.project button a {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    background-color: #5A8DEE;
+    border: none;
+    border-radius: 1em;
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: black;
+    text-decoration: none;
+    font-size: var(--font-md);
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.project img {
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.project button img {
+    height: var(--font-md);
+}
